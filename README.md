@@ -8,5 +8,15 @@ Setup script for config and installation on a fresh macOS machine
 * [nvm](https://github.com/creationix/nvm)
 * [Node.js](https://nodejs.org/)
 * [git](https://git-scm.com/)
+* [htop]()
+* [wget]()
+* [Shiftit]()
+* [Cyberduck]()
+* [authy]()
+* [Google Chrome]()
+* [Google Filestream]()
+* [Visual Studio Code]()
+* [Spotify]()
+* [VirtualBox]()
 
 
