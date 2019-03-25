@@ -8,6 +8,7 @@
 
 # Python
 brew install python
+brew install python3
 pip install --user pipenv
 
 # Node
@@ -21,25 +22,38 @@ nvm install stable
 
 # Git
 brew install git
+ssh-keygen -t rsa -C "csteinmetz1@gmail.com"
+cat ~/.ssh/id_rsa.pub
+echo 'Copy the key from ~/.ssh/id_rsa.pub onto GitHub.com'
+read -n 1 -s -r -p "Press any key to continue"
 
 # Various apps
-brew cask install visual-studio-code
 brew install htop					 
 brew install wget
+brew install shiftit
+brew cask install --appdir="/Applications" cyberduck
+brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" authy
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" google-drive-file-stream
+brew cask install --appdir="/Applications" visual-studio-code
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" spotify-notifications
+brew cask install --appdir="/Applications" virtualbox
 
 ############################# macOS UI Settings #############################
 
 # Dock 
-defaults write com.apple.dock autohide YES					# autohide 
-defaults write com.apple.dock autohide-time-modifier 0		# instant reveal
-defaults write com.apple.dock tilesize 50					# set icon size
-defaults write com.apple.dock orientation left				# position left
-defaults write com.apple.dock mineffect scale				# scale effect (not genie)
-killall Dock 												# restart Dock
+defaults write com.apple.dock autohide YES                  # autohide 
+defaults write com.apple.dock autohide-time-modifier 0      # instant reveal
+defaults write com.apple.dock tilesize 50                   # set icon size
+defaults write com.apple.dock orientation left              # position left
+defaults write com.apple.dock mineffect scale               # scale effect (not genie)
+killall Dock                                                # restart Dock
 
 # Menu bar
-defaults write com.apple.menuextra.battery ShowPercent YES	# show battery percent
-defaults write com.apple.menuextra.clock IsAnalog NO		# digital clock 
+defaults write com.apple.menuextra.battery ShowPercent YES  # show battery percent
+defaults write com.apple.menuextra.clock IsAnalog NO        # digital clock 
 defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  h.mm a"
 
 killall SystemUIServer
