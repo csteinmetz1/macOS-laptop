@@ -55,5 +55,22 @@ killall Dock                                                # restart Dock
 defaults write com.apple.menuextra.battery ShowPercent YES  # show battery percent
 defaults write com.apple.menuextra.clock IsAnalog NO        # digital clock 
 defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  h.mm a"
-
 killall SystemUIServer
+
+# Dark Menu Bar and Dock
+tell application "System Events"
+	tell appearance preferences
+		set dark mode to false
+	end tell
+end tell
+
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+
+tell application "System Events"
+	tell appearance preferences
+		set dark mode to true
+	end tell
+end tell
+
+############################# Custom Directories #############################
+mkdir '~/Code'
