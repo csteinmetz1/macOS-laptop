@@ -41,6 +41,10 @@ brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" spotify-notifications
 brew cask install --appdir="/Applications" virtualbox
 
+############################# Custom Directories #############################
+mkdir '~/Code'
+mkdir '~/Screenshots'
+
 ############################# macOS UI Settings #############################
 
 # Dock 
@@ -72,5 +76,5 @@ tell application "System Events"
 	end tell
 end tell
 
-############################# Custom Directories #############################
-mkdir '~/Code'
+# Screenshot location
+defaults write com.apple.screencapture location ~/Screenshots
