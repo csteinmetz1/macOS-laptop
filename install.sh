@@ -24,6 +24,7 @@ nvm install stable
 # Git
 brew install git
 ssh-keygen -t rsa -C "csteinmetz1@gmail.com"
+printf 'Host github.com\nUser git\nPort 22\nHostname github.com\nIdentityFile ~/.ssh/id_rsa\nTCPKeepAlive yes\nIdentitiesOnly yes\n' >> ~/.ssh/config
 cat ~/.ssh/id_rsa.pub
 echo 'Copy the key from ~/.ssh/id_rsa.pub onto GitHub.com'
 read -n 1 -s -r -p "Press any key to continue"
