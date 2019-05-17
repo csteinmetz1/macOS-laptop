@@ -1,5 +1,6 @@
 #############################     Shell env     #############################
-
+cp .bash_profile "~/.bash_profile"
+source activate "~/.bash_profile"
 
 ############################# Software Install  #############################
 
