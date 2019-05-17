@@ -62,6 +62,9 @@ defaults write com.apple.menuextra.clock IsAnalog NO        # digital clock
 defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  h.mm a"
 killall SystemUIServer
 
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
 # Dark Menu Bar and Dock
 tell application "System Events"
 	tell appearance preferences
