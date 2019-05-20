@@ -1,5 +1,6 @@
 #############################     Shell env     #############################
 cp .bash_profile "~/.bash_profile"
+cp .bash_rc "~/.bashrc"
 source activate "~/.bash_profile"
 
 ############################# Software Install  #############################
@@ -21,7 +22,7 @@ echo '[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/e
 source ~/.bash_profile
 nvm install stable
 
-# Git
+# Git - this part doesn't quite work
 brew install git
 ssh-keygen -t rsa -C "csteinmetz1@gmail.com"
 printf 'Host github.com\nUser git\nPort 22\nHostname github.com\nIdentityFile ~/.ssh/id_rsa\nTCPKeepAlive yes\nIdentitiesOnly yes\n' >> ~/.ssh/config
