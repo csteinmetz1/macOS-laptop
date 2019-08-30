@@ -76,6 +76,9 @@ end tell
 
 defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 
+# Make Xcode in dark mode but rest of the UI in light mode
+defaults write com.apple.dt.Xcode NSRequiresAquaSystemAppearance -bool FALSE
+
 tell application "System Events"
 	tell appearance preferences
 		set dark mode to true
