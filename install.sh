@@ -34,6 +34,10 @@ read -n 1 -s -r -p "Press any key to continue"
 brew install htop					 
 brew install wget
 brew install shiftit
+brew install sox
+brew cask install basictex
+sudo tlmgr install latexmk
+sudo tlmgr install collection-fontsrecommended
 brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" authy
